@@ -1,0 +1,22 @@
+p{
+    font-size: 20px;
+    text-align: center;
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 20px;
+    margin: 2% 3%;
+}
+#sr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    
+}
+
+#sr img{ 
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px; 
+}

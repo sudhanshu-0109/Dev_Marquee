@@ -1,0 +1,43 @@
+#body{
+    margin: 0;
+    padding: 0;
+}
+
+.fee h2{
+    font-size: 50px;
+    color: rgb(11, 27, 63);
+    border-bottom: 3px solid rgb(123, 58, 235);
+    border-left: 3px solid rgb(123, 58, 235);
+    padding: 5PX 10px;
+
+}
+.fee{
+    background-color: rgb(203, 239, 227);
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin: 20px 5px;
+    border: 3px solid rgb(123, 58, 235);
+    border-radius: 15px;
+}
+
+#navbar-top{
+    display: flex;
+    padding: 10px 5px;
+    margin: 1px 1px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(203, 239, 227);
+
+}
+
+#navbar-top a{
+    text-decoration: none;
+    color: rgb(11, 27, 63);
+    background-color: cadetblue;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 2px solid rgb(31, 10, 67);
+    border-radius: 10px;
+}

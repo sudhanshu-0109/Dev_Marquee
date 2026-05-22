@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPB7XqRQ98Kx_eG7YefxO3CQy7wpV1VmB3TQ&s"
+        type="image/x-icon">
+    <title>Sports Physical Form</title>
+</head>
+
+<body>
+    <div id="form">
+        <h1>Sports Physical Form </Form>
+        </h1>
+        <form action="actionpage.html" method="get">
+            <fieldset>
+                <legend>Athlete Information</legend>
+                <ul>
+                    <li><label for="name">Name:</label>
+                        <input required placeholder="Enter name" type="text" id="name" name="name">
+                    </li>
+                    <br>
+                    <li><label for="athelete">Athelete:</label>
+                        <input readonly value="Yes !" type="text" id="athelete" name="athelete">
+                    </li>
+                    <br>
+                    <li><label for="email">Email:</label>
+                        <input required placeholder="Enter email" type="text" id="email" name="email">
+                    </li>
+                    <br>
+                    <li><label for="DOB">Date of Birth:</label>
+                        <input required placeholder="Enter date of birth" type="date" id="DOB" name="DOB">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="time">Current Time:</label>
+                        <input style="border-bottom: none;" type="text" id="time" readonly>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="date">Current Date:</label>
+                        <input style="border-bottom: none;" type="text" id="date" readonly>
+                    </li>
+                </ul>
+            </fieldset>
+            <br>
+            <fieldset style="line-height: 35px;">
+                <legend>Medical History for Athlete</legend>
+                <label for="history"></label>
+                <textarea style="width: 300px;" required placeholder="Enter medical history" id="history" name="history"
+                    rows="4" cols="50"></textarea>
+                <br>
+                <label for="concussion-history"></label>History of Concussions:</label>
+                <input required type="radio" id="yes" name="concussion-history" value="yes">
+                <label for="yes">yes</label>
+                <input required type="radio" id="no" name="concussion-history" value="no">
+                <label for="no">no</label>
+                <br>
+                <label for="allergies">Allergies:</label>
+                <input required type="radio" id="yes" name="allergies" value="yes">
+                <label for="yes">yes</label>
+                <input required type="radio" id="no" name="allergies" value="no">
+                <label for="no">no</label>
+                <br>
+                <label for="fractures">Any bone fractures:</label>
+                <input required type="radio" id="yes" name="fractures" value="yes">
+                <label for="yes">yes</label>
+                <input required type="radio" id="no" name="fractures" value="no">
+                <label for="no">no</label>
+                <br>
+                <label for="gender">Select Gender:</label>
+                <input required type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input required type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input required type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <br>
+                <label for="states">Select State:</label>
+                <select name="states" id="states">
+                    <option value="AL">Bihar</option>
+                    <option value="AK">Assam</option>
+                    <option value="AZ">Gujarat</option>
+                    <option value="AR">Andhra Pradesh</option>
+                    <option value="CA">Uttar Pradesh</option>
+                    <option value="CO">Maharashtra</option>
+                    <option value="CT">Punjab</option>
+                    <option value="DE">Rajasthan</option>
+                    <option value="FL">West Bengal</option>
+                    <option value="GA">Madhya Pradesh</option>
+                    <option value="HI">Haryana</option>
+                    <option value="ID">Kerala</option>
+                    <option value="IL">Jharkhand</option>
+                </select>
+                <br>
+                <label for="dl">depression level:</label>
+                <input type="range" id="dl" name="dl" min="0" max="10">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Drop your last medical Record</legend>
+                <input style="border-bottom: none;" accept=".html, .pdf" type="file" id="medical-record"
+                    name="medical-record">
+            </fieldset>
+            <br>
+            <div id="terms">
+                <input required type="checkbox" id="terms" name="terms" value="yes-terms-conditions">
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="table">
+        <h1>Table</h1>
+        <fieldset>
+            <legend>Fitness Assessment</legend>
+            <table>
+                <tr>
+                    <th>Emp Code</th>
+                    <th>Emp Name</th>
+                    <th>Job Title</th>
+                    <th>Salary(LPA)</th>
+                </tr>
+                <tr>
+                    <td>911</td>
+                    <td>Zoya Shaikh</td>
+                    <td>Developer</td>
+                    <td>3.6</td>
+                </tr>
+                <tr>
+                    <td>912</td>
+                    <td>Lisa Dev</td>
+                    <td>Tester</td>
+                    <td>2.8</td>
+                </tr>
+                <tr>
+                    <td>913</td>
+                    <td>Deepak Jadeja</td>
+                    <td>Digital Marketer</td>
+                    <td>5.2</td>
+                </tr>
+                <tr>
+                    <td>914</td>
+                    <td>Aditi Yewale</td>
+                    <td>Developer</td>
+                    <td>4.0</td>
+                </tr>
+                <tr>
+                    <td>915</td>
+                    <td>Sumren rao</td>
+                    <td>HR</td>
+                    <td>5.6</td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

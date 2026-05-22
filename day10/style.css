@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ── NAV 1 ── */
+#nav1 {
+    width: 100%;
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+}
+
+#logo {
+    height: 50px;
+    width: 100px;
+    flex-shrink: 0;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Search bar takes up remaining space */
+#search {
+    flex: 1;
+    display: flex;
+    height: 38px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#search input {
+    flex: 1;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+#search button {
+    height: 100%;
+    width: 46px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#search button img {
+    height: 18px;
+    width: 18px;
+}
+
+#me,
+#orders {
+    flex-shrink: 0;
+    line-height: 1.3;
+    padding: 0 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#me p:first-child,
+#orders p:first-child {
+    font-size: 12px;
+    color: #ccc;
+}
+
+#cart {
+    flex-shrink: 0;
+    height: 50px;
+    width: 55px;
+}
+
+#cart img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* ── NAV 2 ── */
+#nav2 {
+    width: 100%;
+    height: 38px;
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#nav2::-webkit-scrollbar { display: none; }
+
+#nav2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+#nav2 a:hover {
+    border: 1px solid white;
+}
+
+/* ── HERO BANNER ── */
+/* ── HERO BANNER ── */
+#hero-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+#hero-track {
+    display: flex;
+    transition: transform 0.7s ease;
+}
+
+#hero-track .slide {
+    min-width: 100%;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* White fade on left and right — same as Amazon */
+#hero-wrapper::before,
+#hero-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#hero-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0.6), transparent);
+}
+
+#hero-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0.6), transparent);
+}
+
+/* Arrow buttons */
+.hero-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.75);
+    border: none;
+    width: 45px;
+    height: 90px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.hero-arrow:hover {
+    background: rgba(255, 255, 255, 0.95);
+    color: #000;
+}
+
+.left-arrow  { left: 0; }
+.right-arrow { right: 0; }

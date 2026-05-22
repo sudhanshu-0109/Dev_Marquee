@@ -1,0 +1,99 @@
+#hero{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20x 20px;
+    padding: 10px 20px;
+    background-color: rgb(1, 189, 252);
+    border-right: 20px solid #800c0c;
+    border-left: 20px solid #37cb19;
+    border-top: 20px solid #291fe4;
+    border-bottom: 20px solid #e4e41f;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+}
+body{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+#hero a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c71218;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+#hero a:hover{
+    background-color: #006500;
+    color: rgb(211, 243, 56);
+}
+
+#hero h1{
+    margin: 0;
+    display: inline-block;
+    background-color: chartreuse;
+    padding: 10px 20px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: contain;
+}
+#hero2 img{ 
+    margin: 20px 20px;
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+
+#hero2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20x 20px;
+    padding: 10px 20px;
+    background-color: rgb(1, 189, 252);
+    border-right: 20px solid #800c0c;
+    border-left: 20px solid #37cb19;
+    border-top: 20px solid #291fe4;
+    border-bottom: 20px solid #e4e41f;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+}
+
+#hero2 h1{
+    margin: 0;
+    display: inline-block;
+    background-color: chartreuse;
+    padding: 10px 20px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+#hero2 a:nth-of-type(2) {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c71218;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#hero2 a:nth-of-type(2):hover {
+    background-color: #006500;
+    color: rgb(211, 243, 56);
+}
