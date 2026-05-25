@@ -1,0 +1,43 @@
+/* Body Styling */
+body{
+    background-color: lightblue;
+    font-family: Arial;
+    text-align: center;
+}
+
+/* Heading */
+h1{
+    color: darkblue;
+    font-size: 40px;
+}
+
+/* Paragraph */
+p{
+    color: black;
+    font-size: 20px;
+}
+
+/* Button */
+button{
+    background-color: blue;
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+
+    margin-top: 10px;
+}
+
+/* Box */
+.box{
+    width: 200px;
+    height: 100px;
+
+    background-color: white;
+
+    border: 2px solid black;
+
+    margin: 30px auto;
+
+    padding-top: 40px;
+}
