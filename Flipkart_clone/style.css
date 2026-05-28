@@ -30,7 +30,6 @@ body {
     align-items: center;
 
     padding: 0 40px;
-    margin-top: 20px;
 
 
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
@@ -121,7 +120,7 @@ body {
 
 #header2 {
     width: 80%;
-    height: 80px;
+    height: 72px;
 
     background-color: white;
 
@@ -152,4 +151,28 @@ body {
     padding: 0 20px;
 
     font-size: 16px;
+}
+
+#nav2Right{
+    color: #333333;
+    font-weight: 50;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#login{
+    cursor: pointer;
+    display: flex;
+    gap: 2px;
+}
+
+#more{
+    cursor: pointer;
+}
+
+#cart{
+    cursor: pointer;
+    display: flex;
+    gap: 2px;
 }
