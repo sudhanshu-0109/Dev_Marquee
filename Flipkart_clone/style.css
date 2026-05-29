@@ -176,3 +176,40 @@ body {
     display: flex;
     gap: 2px;
 }
+
+
+#header3 {
+    width: 80%;
+    height: 72px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+#box{
+    height: 100%;
+    width: 7.14%;
+    line-height: 8px;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+
+
+#box img{
+    padding-top: 8px;
+    width: 38px;
+    height: 38px;
+}
+
+#box h4{
+    font-size: 15px;
+    font-weight: 100;
+}
+
