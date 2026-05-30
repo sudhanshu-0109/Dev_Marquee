@@ -213,3 +213,29 @@ body {
     font-weight: 100;
 }
 
+#main{
+    width: 80%;
+    margin-top: 15px;
+}
+
+#adv{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 1100%;
+    height: 100%;
+}
+
+.slider img{
+    width: calc(100% / 11);
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
