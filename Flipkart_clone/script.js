@@ -1,23 +1,15 @@
 const slider = document.querySelector(".slider");
 
-let index = 0;
-const totalSlides = 10;
+let position = 0;
 
 setInterval(() => {
 
-    index++;
+    position += 1;
 
-    slider.style.transition = "transform 0.6s ease";
-    slider.style.transform = `translateX(-${index * (100 / 11)}%)`;
+    slider.style.transform = `translateX(-${position}px)`;
 
-    if(index === totalSlides){
-
-        setTimeout(() => {
-            slider.style.transition = "none";
-            slider.style.transform = "translateX(0)";
-            index = 0;
-        }, 600);
-
+    if(position >= slider.scrollWidth / 2){
+        position = 0;
     }
 
-}, 3000);
+}, 30);
