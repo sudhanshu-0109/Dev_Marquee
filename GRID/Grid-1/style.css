@@ -9,10 +9,15 @@ html,
 body {
     height: 100vh;
     width: 100vw;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #grid{
-    min-width: 45%;
+    min-width: 50%;
+    min-height: 60%;
     display: grid;
     align-self: center;
     justify-self: center;
@@ -20,16 +25,16 @@ body {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 2px;
-    padding: 20px;
-    margin: 20px;
-    background-color: rgb(17, 112, 229);
+    gap: 7px;
+    padding: 7px;
+    /* margin: 20px; */
+    background-color: rgb(5, 87, 187);
 }
 
 .item {
     background-color: rgb(5, 253, 154);
     border: 1px solid black;
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
