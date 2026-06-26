@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f4f4;
+}
+
+#box{
+    width:220px;
+    padding:25px;
+    background:#111;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+}
+
+.circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    opacity:.25;
+}
+
+/* Initial Colors */
+#circle1{
+    background:red;
+    animation:redLight 2s infinite;
+}
+
+#circle2{
+    background:rgb(255, 179, 0);
+    animation:yellowLight 2s infinite;
+}
+
+#circle3{
+    background:rgb(0, 255, 0);
+    animation:greenLight 2s infinite;
+}
+
+@keyframes redLight{
+    0%,33%{
+        opacity:1;
+        box-shadow:0 0 30px red;
+    }
+    34%,100%{
+        opacity:.25;
+        box-shadow:none;
+    }
+}
+
+@keyframes greenLight{
+    0%,33%{
+        opacity:.25;
+        box-shadow:none;
+    }
+    34%,66%{
+        opacity:1;
+        box-shadow:0 0 30px lime;
+    }
+    67%,100%{
+        opacity:.25;
+        box-shadow:none;
+    }
+}
+
+@keyframes yellowLight{
+    0%,66%{
+        opacity:.25;
+        box-shadow:none;
+    }
+    67%,100%{
+        opacity:1;
+        box-shadow:0 0 30px yellow;
+    }
+}
