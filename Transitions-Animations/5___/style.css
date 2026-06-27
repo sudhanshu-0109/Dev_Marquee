@@ -18,22 +18,23 @@ body {
 
 @keyframes ballMove {
     0%{
-        transform: rotate(-90deg); 
-        margin-top: 10px;
+        transform: rotate(-90deg);
+        margin-left: 300px;
+        margin-top: 300px;
         filter: blur(0px);
     }
 
     50%{
         transform: rotate(90deg);
-        margin-left: 1000px;
-        margin-top: 500px;
+        margin-left: 1400px;
+        margin-top: 300px;
         filter: blur(10px);
         
     }
 
     100%{
         transform: rotate(-90deg);
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 300px;
+        margin-top: 300px;
     }
 }
